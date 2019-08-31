@@ -1,11 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Exercise 4</title>
+    <title>Exercise 1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <center>
-        <h1>Final Project</h1>
-    </center>
+    <div class="container">
+        <form action="https://formspree.io/melvinhutomo@gmail.com" method="POST">
+        <div class="row">
+          <div class="col-25">
+            <label for="email">Email</label>
+          </div>
+          <div class="col-75">
+            <input type="email" id="email" name="email" placeholder="Your email address..">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="fullname">Full Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="fullname" name="fullname" placeholder="Your full name..">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="country">Country</label>
+          </div>
+          <div class="col-75">
+            <select id="country" name="country">
+              <option value="indonesia">Indonesia</option>
+              <option value="singapura">Singapura</option>
+              <option value="malaysia">Malaysia</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="subject">Subject</label>
+          </div>
+          <div class="col-75">
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <input type="submit" value="Submit">
+        </div>
+        </form>
+      </div>
+      
 </body>
 </html>
